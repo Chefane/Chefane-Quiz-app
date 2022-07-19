@@ -6,6 +6,7 @@ import Quiz from './Components/Quiz';
 import EndScreen from './Components/EndScreen';
 import {QuizContext} from "./Helpers/Context";
 
+
 function App() {
   const [gameState, setGameState] = useState("menu");
   const [score, setScore] = useState(0);
@@ -17,6 +18,8 @@ function App() {
     {gameState === "menu" && <MainMenu/>}
     {gameState === "quiz" && <Quiz/>}
     {gameState === "endScreen" && <EndScreen/>}
+  
+    
     </QuizContext.Provider>
   </div>
   );

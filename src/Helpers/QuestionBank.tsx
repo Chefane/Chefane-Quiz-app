@@ -1,3 +1,5 @@
+import { getMaxListeners } from "process"
+
 export const Questions = [
     {
         prompt: "1. Which of the following commands is used to start new repository?",
@@ -178,6 +180,82 @@ export const Questions = [
         optionC: "git search",
         optionD: "git grep",
         answer: "D",
-
     },
+    {
+        prompt: "21. A command used to delete a branch",
+        optionA: "git delete branch",
+        optionB: "git branch -d",
+        optionC: "git -d branch",
+        optionD: "git -d branch",
+        answer: "B",
+    },
+    {
+        prompt: "22. A command used to connect to your local respository to the remote server",
+        optionA: "git remote add",
+        optionB: "git remote",
+        optionC: "git connect",
+        optionD: "git connect remote",
+        answer: "A",
+    },
+    {
+        prompt: "23. GGit push is used to push all branches to your remote repository",
+        optionA: "True",
+        optionB: "False",
+        answer: "B",
+    },
+    {
+        prompt: "24. A command used to fetch and merge changes on the remote server to your working directory",
+        optionA: "git push",
+        optionB: "git pull",
+        optionC: "git fetch",
+        optionD: "git merge",
+        answer: "B",
+    },
+    {
+        prompt: "25. A command used to restore recently stashed file",
+        optionA: "git stash current",
+        optionB: "git stash",
+        optionC: "git stash current",
+        optionD: "git stash pop",
+        answer: "D",
+    },
+    {
+        prompt: "26. what is git?",
+        optionA: "scripting langauge",
+        optionB: "bash langauge",
+        optionC: "programming langauge",
+        optionD: "morden version control system",
+        answer: "D",
+    },
+    {
+        prompt: "27. The following is part of configuring git in your local machine",
+        optionA: "git push main origin",
+        optionB: "git pull origin main",
+        optionC: "git stash",
+        optionD: "git --global user.email 'nosichefane@gmail.com'",
+        answer: "D",
+    },
+    {
+        prompt: "28. Github is where over 83 million developers shape the future of software together",
+
+        optionA: "True",
+        optionB: "False",
+        answer: "A",
+    },
+    {
+        prompt: "29. Github cannot be connected to heroku",
+
+        optionA: "True",
+        optionB: "False",
+        answer: "B",
+    },
+    {
+        prompt: "30. Heroku is a hosting platform",
+
+        optionA: "True",
+        optionB: "False",
+        answer: "A",
+    },
+    
+    
 ]
