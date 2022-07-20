@@ -256,6 +256,13 @@ export const Questions = [
         optionB: "False",
         answer: "A",
     },
+    {
+        prompt: "31. Heroku is a hosting platform",
+
+        optionA: "True",
+        optionB: "False",
+        answer: "A",
+    },
     
     
 ]
