@@ -23,6 +23,10 @@ function Quiz(){
         setGameState("endScreen");
     }
 
+    const previousQuestion = () => {
+        setCurrQuestion(currQuestion - 1);
+    }
+
     return (<div className="Quiz">
         <p>{Questions[currQuestion].prompt}</p>
         <div className="options">
@@ -31,12 +35,16 @@ function Quiz(){
             <button onClick={() => setOptionChosen("C")}>{Questions [currQuestion].optionC} </button>
             <button onClick={() => setOptionChosen("D")}>{Questions [currQuestion].optionD} </button>
         </div>
+
+        {/*if the current question is the last, display finish quiz button or else continue*/}
         
         {currQuestion == Questions.length - 1 ? (
             <button className="next"  onClick={finishQuiz}>Finish Quiz</button>
         ): (
             <button className="next" onClick={nextQuestion}>Next Question</button>  
         ) }
+           <button className="next" onClick={previousQuestion}>Previous Question</button>  
+        
     </div>
     );
     
